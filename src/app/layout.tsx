@@ -4,8 +4,14 @@ import "../styles/variables.scss";
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 
 export const metadata = {
-  title: "My Mantine app",
+  title: "Snail SC",
   description: "I have followed setup instructions carefully",
+  icons: {
+    icon: ["/favicon.ico?v=4"],
+    apple: ["/apple-touch-icon.png?v=4"],
+    shortcut: ["/apple-touch-icon.png"],
+  },
+  mainfest: "/site.webmainfest",
 };
 
 export default function RootLayout({

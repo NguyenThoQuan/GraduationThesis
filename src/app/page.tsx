@@ -1,8 +1,11 @@
-import { Button } from "@mantine/core";
 import "../styles/variables.scss";
 
 function Home() {
-  return <Button>Next link button</Button>;
+  return (
+    <div>
+      <h3>Home</h3>
+    </div>
+  );
 }
 
 export default Home;
