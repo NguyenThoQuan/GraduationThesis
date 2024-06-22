@@ -1,4 +1,5 @@
 import "@mantine/core/styles.css";
+import "../styles/variables.scss";
 
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 
