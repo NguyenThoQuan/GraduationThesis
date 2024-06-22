@@ -1,5 +1,6 @@
 import "@mantine/core/styles.css";
 import "../styles/variables.scss";
+import Header from "@/components/Header/Header";
 
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 
@@ -25,7 +26,10 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body>
-        <MantineProvider>{children}</MantineProvider>
+        <MantineProvider>
+          <Header />
+          {children}
+        </MantineProvider>
       </body>
     </html>
   );

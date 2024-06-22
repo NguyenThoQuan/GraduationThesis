@@ -1,10 +1,12 @@
+import { Grid } from "@mantine/core";
 import style from "./Header.module.scss";
+import Search from "./Search/Search";
 
 const Header = () => {
   return (
-    <div>
-      <h3>Header</h3>
-    </div>
+    <Grid p="15px 0px">
+      <Search />
+    </Grid>
   );
 };
 

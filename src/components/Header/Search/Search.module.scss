@@ -1,0 +1,6 @@
+.search {
+  input:focus {
+    border: 1px solid var(--clr-outlineInput);
+    outline: 1px solid var(--clr-outlineInput);
+  }
+}
