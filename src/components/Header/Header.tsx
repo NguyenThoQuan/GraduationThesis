@@ -1,18 +1,22 @@
 "use client";
 import Search from "./Search/Search";
 import Menu from "./Menu/Menu";
+import Utilities from "./Utilities/Utilities";
 import style from "./Header.module.scss";
-import { Container, Flex } from "@mantine/core";
+import { Container, Flex, Paper } from "@mantine/core";
 
 const Header = () => {
   return (
     <header className={style.header}>
-      <Container p={"10px 10px"} fluid>
-        <Flex w={"100%"}>
-          <Search />
-          <Menu />
-        </Flex>
-      </Container>
+      <Paper shadow="sm">
+        <Container p={"10px 25px"} fluid>
+          <Flex w={"100%"} justify={"space-between"} align={"center"}>
+            <Search />
+            <Menu />
+            <Utilities />
+          </Flex>
+        </Container>
+      </Paper>
     </header>
   );
 };
